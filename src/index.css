@@ -1,0 +1,28 @@
+@import "tailwindcss";
+body{
+    background-color: rgb(5, 1, 20);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.section-animate {
+  opacity: 0;
+  filter: blur(5px); /* ব্লার যোগ করা হলো */
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-animate.show {
+  opacity: 1;
+  filter: blur(0); 
+  transform: translateY(0);
+}
