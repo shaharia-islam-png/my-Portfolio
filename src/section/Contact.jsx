@@ -1,14 +1,17 @@
+// pages/Contact.jsx
 
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import { Globe } from "../components/globe.jsx";
 import SocialIcons from '../components/SocialIcons';
-import { Particles } from "../components/Particles.jsx"; 
+import { Particles } from "../components/Particles.jsx";
 
 const Contact = () => {
     return (
-        <section id='contact' className='section-animate min-h-screen'>
-        <div className="relative  flex items-center justify-center min-h-screen px-4 py-16 w-full overflow-hidden">
+        // The main container for the page
+        <div className="relative min-h-screen flex items-center justify-center px-4 py-16 w-full overflow-hidden bg-neutral-900">
+            
+            {/* Background Particles */}
             <Particles 
                 className="absolute inset-0 z-0" 
                 quantity={100}
@@ -17,26 +20,32 @@ const Contact = () => {
                 staticity={50}
                 color="#ffffff"
             />
+            
+            {/* Main Content Wrapper */}
             <div className="relative z-10 w-full max-w-7xl mx-auto">
-    
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-60 items-center justify-center">
-                    <div className="flex justify-center lg:justify-start ">
+                
+                {/* Flex container for Form and Globe */}
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+                    
+                    {/* Contact Form - Takes full width on mobile, half on desktop */}
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
                         <ContactForm />
                     </div>
-
-                   
-                    <div className="flex justify-end mr-20 lg:translate-y-16">
+                    {/* Globe - Visible on all screens, positioned first on mobile */}
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <Globe />
                     </div>
 
+
                 </div>
-                 <div className="mt-16 flex justify-center w-full">
+                
+                {/* Social Icons - Positioned below the main content */}
+                <div className="mt-16 flex justify-center w-full">
                     <SocialIcons />
                 </div>
 
             </div>
         </div>
-        </section>
     );
 };
 
