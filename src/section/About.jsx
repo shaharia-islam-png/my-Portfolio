@@ -12,8 +12,10 @@ import git from "../asset/git.png";
 import microsoft from "../asset/microsoft.png";
 import github from "../asset/github.png";
 import audi from "../asset/arduino.png";
-import { Globe } from "../components/globe.jsx";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Button from "../components/Button.jsx";
+import { Particles } from "../components/Particles.jsx";
+
 
 const About = () => {
   return (
@@ -102,23 +104,34 @@ const About = () => {
 
         {/* Card 5: Time Zone & Globe */}
         <div className="relative overflow-hidden md:col-span-4 bg-linear-to-r from-gray-800 to-slate-900 rounded-lg flex flex-col justify-start p-4 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-slate-500/50">
-          <img
-            src={space}
-            alt="Space"
-            className="absolute inset-0 w-full h-full object-cover opacity-70"
-          />
+           <Particles 
+                          className="absolute inset-0 z-0" 
+                          quantity={100}
+                          ease={50}
+                          size={0.5}
+                          staticity={50}
+                          color="#ffffff"
+                      />
           <p className="text-xl md:text-2xl text-white font-bold relative z-10">Time Zone</p>
           <p className="text-white mt-2 relative z-10 text-sm md:text-base">
             I'm based in Mars, and open to remote <br /> work worldwide.
           </p>
-          {/* Mobile: Centered Globe */}
-          <figure className="md:hidden flex items-center justify-center h-32 mt-4">
-            <Globe />
-          </figure>
+       
+          <div className="md:hidden flex items-center justify-center h-32 mt-4">
+          <DotLottieReact
+      src="https://lottie.host/3da54fff-704c-4f11-9181-fd6a7efa428e/OLWNyjNNSQ.lottie"
+      loop
+      autoplay
+    />
+          </div>
           {/* Desktop: Absolute Positioned Globe */}
-          <figure className="hidden md:block absolute left-[30%] top-[10%]">
-            <Globe />
-          </figure>
+          <div className="hidden md:block absolute left-[30%] top-[10%]">
+           <DotLottieReact
+      src="https://lottie.host/3da54fff-704c-4f11-9181-fd6a7efa428e/OLWNyjNNSQ.lottie"
+      loop
+      autoplay
+    />
+          </div>
         </div>
       </div>
     </section>

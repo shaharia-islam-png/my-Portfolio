@@ -2,9 +2,9 @@
 
 import React from 'react';
 import ContactForm from '../components/ContactForm';
-import { Globe } from "../components/globe.jsx";
 import SocialIcons from '../components/SocialIcons';
 import { Particles } from "../components/Particles.jsx";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Contact = () => {
     return (
@@ -33,7 +33,11 @@ const Contact = () => {
                     </div>
                     {/* Globe - Visible on all screens, positioned first on mobile */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                        <Globe />
+                         <DotLottieReact
+      src="https://lottie.host/1e9d6411-7549-4359-a9ff-fa6decba9c50/5oWdwY6F0I.lottie"
+      loop
+      autoplay
+    />
                     </div>
 
 
