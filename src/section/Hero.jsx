@@ -2,6 +2,7 @@ import React from "react";
 import HeroText from "../components/HeroText.jsx";
 import ParralaxBg from "../components/ParralaxBg.jsx";
 import My from "../asset/my.jpeg";
+import Resume from "../asset/resume.pdf";
 
 const Hero = () => {
   return (
@@ -36,7 +37,7 @@ const Hero = () => {
 
          
           <a
-            href="/resume.pdf" 
+            href={Resume} 
             download="Shaharia-Resume.pdf" 
             className="
               mt-10 
