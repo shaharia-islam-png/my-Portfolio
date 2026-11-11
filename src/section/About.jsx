@@ -12,6 +12,9 @@ import git from "../asset/git.png";
 import microsoft from "../asset/microsoft.png";
 import github from "../asset/github.png";
 import audi from "../asset/arduino.png";
+import python from "../asset/python.png";
+import django from "../asset/django.png";
+import postgresql from "../asset/postgresql.png";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Button from "../components/Button.jsx";
 import { Particles } from "../components/Particles.jsx";
@@ -33,7 +36,7 @@ const About = () => {
 
             <h4 className="text-white text-xl md:text-2xl font-bold mt-4">Skills:</h4>
             <p className="text-gray-100 mt-2 text-sm md:text-base">
-              HTML, CSS, Tailwind CSS JavaScript, React, C Language Basic, Git & GitHub.
+              HTML, CSS, Tailwind CSS JavaScript, React, C Language Basic, C++ Language Basic, Python, Django, PostgreSQL, Git & GitHub.
             </p>
 
             <h4 className="text-white text-xl md:text-2xl font-bold mt-4">
@@ -78,6 +81,9 @@ const About = () => {
             <Card style={{ transform: "rotate(20deg)", top: "40%", left: "70%" }} image={github} />
             <Card style={{ transform: "rotate(20deg)", top: "50%", left: "20%" }} image={audi} />
             <Card style={{ transform: "rotate(-50deg)", top: "70%", left: "5%" }} image={microsoft} />
+            <Card style={{ transform: "rotate(30deg)", top: "20%", left: "50%" }} image={python} />
+            <Card style={{ transform: "rotate(-30deg)", top: "70%", left: "50%" }} image={django} />
+            <Card style={{ transform: "rotate(90deg)", bottom: "30%", left: "50%" }} image={postgresql} />
           </div>
         </div>
 

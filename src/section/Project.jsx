@@ -7,6 +7,8 @@ import js from "../asset/js.gif";
 import react from "../asset/react.gif";
 import vs from "../asset/vs.png";
 import github from "../asset/github.png";
+import django from "../asset/django.png";
+import postgresql from "../asset/postgresql.png";
 import pbg from "../asset/p1.png";
 import pbg2 from "../asset/p2.png";
 import pbg3 from "../asset/p3.png";
@@ -47,18 +49,19 @@ const projectsData = [
     },
     {
         id: '3',
-        name: 'University Election Voting System',
+        name: 'Gear up Moto',
         techLogos: [
             { src: html, name: 'HTML' },
             { src: css, name: 'CSS' },
             { src: js, name: 'JavaScript' },
-            { src: react, name: 'React' },
+            { src: django, name: 'Django' },
+            { src: postgresql, name: 'PostgreSQL' },
             { src: vs, name: 'VS Code' },
             { src: github, name: 'GitHub' }
             
         ],
         details: 'A secure and user-friendly voting system for university elections, built with React and Firebase. they can vote for their preferred candidates, view real-time results, and ensure a transparent election process. Anyone cannot vote more than once, and the age verification system ensures that only eligible voters can participate.',
-        liveLink: 'https://university-election-voting.netlify.app/',
+        liveLink: 'https://gearupmotocumilla.com/',
         imageUrl: pbg3
     },
     {
