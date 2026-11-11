@@ -66,18 +66,19 @@ const projectsData = [
     },
     {
         id: '4',
-        name: 'TODO List App',
+        name: 'LumenDev Company Website',
         techLogos: [
             { src: html, name: 'HTML' },
             { src: css, name: 'CSS' },
             { src: js, name: 'JavaScript' },
-            { src: react, name: 'React' },
+            { src: django, name: 'Django' },
+            { src: postgresql, name: 'PostgreSQL' },
             { src: vs, name: 'VS Code' },
             { src: github, name: 'GitHub' }
             
         ],
-        details: 'A simple and intuitive TODO list application built with React and Firebase. Users can add, edit, and delete tasks, mark them as complete, and persist data using Firebase. The app features a clean and responsive design, making it easy to manage tasks on any device. Whether you need to organize your daily to-dos or keep track of long-term projects, this TODO list app has got you covered. Experience seamless task management and stay productive with this user-friendly application.',
-        liveLink: 'https://todo-list-app7f.netlify.app/',
+        details: 'lumenDev is a software development company that specializes in creating innovative and efficient solutions for businesses. The company focuses on delivering high-quality software products and services, including web development, mobile app development, and custom software solutions. With a team of skilled developers and designers, LumenDev aims to help businesses achieve their goals through technology.',
+        liveLink: 'https://lumendev3.com/',
         imageUrl: pbg4
     },
     {
